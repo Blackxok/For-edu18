@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ergashev</title>
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- -------------------------------------
+                        NAVBAR
+    --------------------------------------------->
+    <main class="main">
+        <header class="header">
+            <div class="wrap d-flex">
+                <h1 class="logo">
+                    <a href=""><img src="./Imgs/LogoM.png" alt=""></a>
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="sidemenu-toggler" onclick="och()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="sidemenu">
+                <div class="close" onclick="yop()"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </main>
+    <!-- -------------------------------------
+                        scroll UP start
+    --------------------------------------------->
+    <div class="scroll-up outer-shadow hover-in-shadow">
+        <svg class="scroll-up_svg" viewBox="-2 -2 52 52">
+            <path class="scroll-up_svg-path" d="
+              M24, 0 
+              a24 24 0 0, 1 0, 48
+              a24 24 0 0, 1 0, -48 
+              " />
+        </svg>
+        <i class="fas fa-caret-up upicon"></i>
+    </div>
+    <!-- -------------------------------------
+                        scroll UP end
+    --------------------------------------------->
+    <!-- -------------------------------------
+                        NAVBAR  END
+    --------------------------------------------->
+
+    <!-- -------------------------------------
+                        Home section start
+    --------------------------------------------->
+    <br><br><br><br><br>
+
+    <section class="home container text-white" id="home">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hero-text">
+                    <span class="title">Salom men</span><br>
+                    <span class="name">Muhammad Ergashev</span><br>
+                    <span class="job">Mental arifmetika o'qituvchisi</span><br>
+                    <span class="email"><i class="fa far fa-envelope icon"></i>ergahsev@gmail.com</span><br>
+                    <span class="phone"><i class="fa fas fa-phone icon"></i>+998 91 6212730</span>
+
+                    <div class="social-icons d-flex">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-telegram"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="hero-img">
+                    <div class="img-border">
+                        <img src="./Imgs/haker.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------------------------------
+                        About section start
+  --------------------------------------------->
+    <br><br><br><br><br>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="flip-right" data-aos-duration="1000">
+                    <img src="./Imgs/I'mTeacher.png" alt="">
+                </div>
+                <div class="col-md-5 text-white gap" data-aos="flip-left" data-aos-duration="1500">
+                    <br><br><br><br>
+                    <h2>About me</h2>
+                    <br>
+                    <p>Men Ergashev Muhammad 24 yoshman
+                        Guliston davlat universiteti
+                        4-bosqich talabasiman. "I can" o'quv markazi
+                        bitiruvchisiman eslap qolish boyicha Rossia rekordchisi
+                        Davronbek Turdievning "Supper miyya" online treningi ishtirokchisiman.
+                        Bugungi kunda Mental arifmetika o'qituvchisiman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------
+                        About section end
+  --------------------------------------------->
+    <br><br><br><br><br>
+
+    <section class="mh-portfolio" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="section-title col-sm-12">
+                    <h3>Gallery</h3>
+                </div>
+                <br><br>
+                <div class="part col-sm-12">
+                    <div class="portfolio-nav col-sm-12" id="filter-button">
+                        <ul>
+                            <li data-filter="*" class="current">
+                                <span>Bu biz</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mh-project-gallery col-sm-12" id="project-gallery">
+                        <div class="portfolioContainer row">
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left" data-aos-duration="100">
+                                <figure>
+                                    <img src="./Imgs/24.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-right"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/9.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-right"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/2.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/4.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-right"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/6.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/3.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/25.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/26.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/27.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/28.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/29.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/30.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/31.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/35.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/36.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/32.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/33.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/34.jpg" alt="">
+                                </figure>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+
+    <section class="mh-portfolio" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="section-title col-sm-12">
+                    <h3>Gallery II</h3>
+                </div>
+                <br><br>
+                <div class="part col-sm-12">
+                    <div class="portfolio-nav col-sm-12" id="filter-button">
+                        <ul>
+                            <li data-filter="*" class="current">
+                                <span>Mening ustozlarim</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mh-project-gallery col-sm-12" id="project-gallery">
+                        <div class="portfolioContainer row">
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-left" data-aos-duration="100">
+                                <figure>
+                                    <img src="./Imgs/37.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-right"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/38.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="grid-item col-md-4 user-interface" data-aos="flip-right"
+                                data-aos-duration="1000">
+                                <figure>
+                                    <img src="./Imgs/39.jpg" alt="">
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title col-sm-12">
+                    <h3>Contact</h3>
+                </div>
+                <div class="col-md-4 contact-item user-interface">
+                    <figure>
+                        <div class="box">
+                            <i class="fas fa-phone-alt ico"></i>
+                            <p>+998 91 6212730</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class=" col-md-4 contact-item user-interface">
+                    <figure>
+                        <div class="box">
+                            <i class="fas fa-envelope ico"></i>
+                            <p>Ergashev@gmail.com</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class=" col-md-4 contact-item user-interface">
+                    <figure>
+                        <div class="box">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223446.35632601636!2d68.32631575406631!3d40.50604331950957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ad89ca6b1b9d85%3A0xd84fdb6eeb00be2f!2z0JDQutCw0LvRgtGL0L3RgdC60LjQuSDRgNCw0LnQvtC90L3Ri9C5INC-0YLQtNC10Lsg0J3QmtCt0JjQoSAi0KPQt9Cx0LXQutC40L3QstC10YHRgiI!5e1!3m2!1sru!2s!4v1625730845127!5m2!1sru!2s"
+                                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br>
+
+    <footer>
+        <p>Ushbu sayt 08.07.2021 da tuzildi</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./Fontawesome/all.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
