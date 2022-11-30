@@ -1,2 +1,2 @@
-# For-edu18 from you tube__ 
+# For-edu18 from you tube.
 https://for-edu18.netlify.app/
